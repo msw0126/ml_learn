@@ -3,6 +3,7 @@
 """
 GMM与图像
 """
+from __future__ import print_function
 from imageop import scale
 from random import gauss
 

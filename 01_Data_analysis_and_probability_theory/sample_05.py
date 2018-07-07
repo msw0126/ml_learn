@@ -3,7 +3,7 @@
 """
 对数函数的上升速度
 """
-
+from __future__ import print_function
 import math
 import matplotlib.pyplot as plt
 import numpy as np
