@@ -40,8 +40,19 @@ if __name__ == "__main__":
     output_path = r'.\Pic'
     if not os.path.exists(output_path):
         os.mkdir(output_path)
+    """
+    a = 
+    [[212 212 208]
+  [213 212 208]
+  [213 213 209]
+  ...
+  [204 199 195]
+  [201 196 192]
+  [198 194 190]]]
+    """
     a = np.array(A)
     K = 50
+    # 分别对三个通道进行SVD
     u_r, sigma_r, v_r = np.linalg.svd(a[:, :, 0])
     u_g, sigma_g, v_g = np.linalg.svd(a[:, :, 1])
     u_b, sigma_b, v_b = np.linalg.svd(a[:, :, 2])
@@ -53,10 +64,12 @@ if __name__ == "__main__":
         R = restore1(sigma_r, u_r, v_r, k)
         G = restore1(sigma_g, u_g, v_g, k)
         B = restore1(sigma_b, u_b, v_b, k)
+        # 把这三个在重新联系在一起
         I = np.stack((R, G, B), 2)
         Image.fromarray(I).save('%s\\svd_%d.png' % (output_path, k))
         if k <= 12:
             plt.subplot(3, 4, k)
+            # 绘画灰度图
             plt.imshow(I)
             plt.axis('off')
             plt.title(u'奇异值个数：%d' % k)

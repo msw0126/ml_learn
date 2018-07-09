@@ -7,19 +7,24 @@ from PIL import Image
 
 
 def convolve(image, weight):
+    """
+    卷积操作：给定一个图像和权重。
+    image：N*N的矩阵。
+    """
     height, width = image.shape
     h, w = weight.shape
-    height_new = height - h + 1
+    height_new = height - h + 1  # 没有取pading，新的图像就那么大
     width_new = width - w + 1
-    image_new = np.zeros((height_new, width_new), dtype=np.float)
+    image_new = np.zeros((height_new, width_new), dtype=np.float)  # 先清零
     for i in range(height_new):
         for j in range(width_new):
-            image_new[i,j] = np.sum(image[i:i+h, j:j+w] * weight)
-    image_new = image_new.clip(0, 255)
+            image_new[i,j] = np.sum(image[i:i+h, j:j+w] * weight)  # 直接做相乘相加的操作
+    image_new = image_new.clip(0, 255)  # 防止有问题，现在在0-255.（大于255的都清成255，小于0的都清成0）
     image_new = np.rint(image_new).astype('uint8')
-    return image_new
+    return image_new  # 最后把这个图像返回
 
 # image_new = 255 * (image_new - image_new.min()) / (image_new.max() - image_new.min())
+
 
 if __name__ == "__main__":
     A = Image.open("6.son.png", 'r')
@@ -27,6 +32,7 @@ if __name__ == "__main__":
     if not os.path.exists(output_path):
         os.mkdir(output_path)
     a = np.array(A)
+    # 给定算子，提取数据
     soble_x = np.array(([-1, 0, 1], [-2, 0, 2], [-1, 0, 1]))
     soble_y = np.array(([-1, -2, -1], [0, 0, 0], [1, 2, 1]))
     soble = np.array(([-1, -1, 0], [-1, 0, 1], [0, 1, 1]))
@@ -39,6 +45,7 @@ if __name__ == "__main__":
     print '梯度检测：'
     for weight in weight_list:
         print weight, 'R',
+        # eval(weight) 以这个字符串的名的值。例：weight = soble_x，指的是上面的soble_x值
         R = convolve(a[:, :, 0], eval(weight))
         print 'G',
         G = convolve(a[:, :, 1], eval(weight))

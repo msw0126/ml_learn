@@ -2,15 +2,131 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d2a495f-beac-4e1d-84a3-ada6351bace2" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/05_The_use_of_math_libraries/04_statistic.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/05_The_use_of_math_libraries/5.1.intro.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/05_The_use_of_math_libraries/5.2.calc_e.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/05_The_use_of_math_libraries/5.3.class_intro.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/05_The_use_of_math_libraries/5.4.stat.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/05_The_use_of_math_libraries/5.5MultiGuass.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/07_regression/8.1.Advertising.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/07_regression/8.2.LinearRegression_CV.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/07_regression/8.3.Iris_LR.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/07_regression/8.4.overfit.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/07_regression/8.Advertising.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/07_regression/8.iris.data" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/07_regression/8.iris.names" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/07_regression/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/07_regression/doc/7.回归.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/07_regression/doc/8.回归实践.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/08_Decision_trees_and_random_forests/10.1.Iris_DecisionTree.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/08_Decision_trees_and_random_forests/10.2.Iris_DecisionTree_Enum.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/08_Decision_trees_and_random_forests/10.3.DecisionTreeRegressor.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/08_Decision_trees_and_random_forests/10.4.MultiOutput_DTR.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/08_Decision_trees_and_random_forests/10.5.Iris_RandomForest_Enum.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/08_Decision_trees_and_random_forests/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/08_Decision_trees_and_random_forests/doc/10.决策树和随机森林实践.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/08_Decision_trees_and_random_forests/doc/9.决策树和随机森林.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/08_Decision_trees_and_random_forests/graphviz-2.38.msi" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/08_Decision_trees_and_random_forests/iris_tree.dot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/09_promote/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/09_promote/doc/11.提升.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/12.1.xgBoost_Intro.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/12.2.xgBoost_Predict.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/12.3.xgBoost_Wine.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/12.4.xgBoost_ReadData.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/12.5.Titanic.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/12.6.Bagging_intro.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/12.Titanic.test.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/12.Titanic.train.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/12.Titanic.train_Prime.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/12.Titannic_Meta.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/12.agaricus.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/12.agaricus_test.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/12.agaricus_train.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/12.wine.data" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/12.wine_names" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/doc/12.XGBoost实践.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10_XGBoost/xgboost-master.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/11_SVM/14.1.SVM.intro.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/11_SVM/14.2.SVM_draw.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/11_SVM/14.3.ClassifierIndex.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/11_SVM/14.4.unBalance.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/11_SVM/14.5.HandWrittenDigits.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/11_SVM/14.6.SVR.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/11_SVM/14.7.CV.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/11_SVM/14.bipartition.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/11_SVM/14.bipartition2.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/11_SVM/14.optdigits.names" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/11_SVM/14.optdigits.tes" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/11_SVM/14.optdigits.tra" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/11_SVM/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/11_SVM/doc/13.SVM.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/11_SVM/doc/14.SVM实践.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/16.1.kMeans.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/16.2.criteria.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/16.3.VectorQuantization.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/16.4.AP.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/16.5.MeanShift.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/16.6.DBSCAN.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/16.7.SC.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/16.8.SpectralClusterImage.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/16.Chrome.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/16.Lena.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/16.flower.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/16.flower2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/16.son.bmp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/16.son.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/doc/15.聚类.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/12_cluster/doc/16.聚类实践.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/13_EM_algorithm/18.1.EM.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/13_EM_algorithm/18.2.GMM.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/13_EM_algorithm/18.3.GMM_Parameter.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/13_EM_algorithm/18.4.GMM_Iris.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/13_EM_algorithm/18.5.DPGMM.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/13_EM_algorithm/18.6.GMM_pdf.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/13_EM_algorithm/18.HeightWeight.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/13_EM_algorithm/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/13_EM_algorithm/doc/17.EM算法.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/13_EM_algorithm/doc/18.EM算法实践.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/14_bayesian_network/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/14_bayesian_network/doc/19.贝叶斯网络.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/15_Naive_Bayes/20.1.Iris_GaussianNB.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/15_Naive_Bayes/20.2.MultinomialNB_intro.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/15_Naive_Bayes/20.3.text_classification.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/15_Naive_Bayes/20news-bydate.rar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/15_Naive_Bayes/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/15_Naive_Bayes/doc/20.朴素贝叶斯实践.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/16_LDA/22.1.LDA_intro.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/16_LDA/22.2.netease_news.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/16_LDA/22.3.reuters.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/16_LDA/22.LDA_test.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/16_LDA/22.news.dat" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/16_LDA/22.reuters.dat" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/16_LDA/22.reuters.ldac" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/16_LDA/22.reuters.titles" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/16_LDA/22.reuters.tokens" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/16_LDA/22.stopword.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/16_LDA/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/16_LDA/doc/21.主题模型.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/16_LDA/doc/22.主题模型实践.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/17_HMM/24.1.TrainHMM.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/17_HMM/24.2.Segmentation.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/17_HMM/24.3.jieba_intro.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/17_HMM/24.4.GMHMM.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/17_HMM/24.5.Stock.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/17_HMM/24.MyBook.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/17_HMM/24.SH600000.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/17_HMM/24.novel.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/17_HMM/24.pku_training.utf8" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/17_HMM/A.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/17_HMM/B.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/17_HMM/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/17_HMM/doc/23.HMM.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/17_HMM/doc/24.HMM实践.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/17_HMM/pi.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/05_The_use_of_math_libraries/03_class_and_inheritance.py" afterPath="$PROJECT_DIR$/05_The_use_of_math_libraries/03_class_and_inheritance.py" />
+      <change beforePath="$PROJECT_DIR$/05_The_use_of_math_libraries/5.1.intro.py" afterPath="$PROJECT_DIR$/05_The_use_of_math_libraries/5.1.intro.py" />
+      <change beforePath="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.1.Ensumble.py" afterPath="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.1.Ensumble.py" />
+      <change beforePath="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.2.fft.py" afterPath="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.2.fft.py" />
+      <change beforePath="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.3.svd.py" afterPath="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.3.svd.py" />
+      <change beforePath="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.4.convolve.py" afterPath="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.4.convolve.py" />
+      <change beforePath="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.5.image_convolve.py" afterPath="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.5.image_convolve.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,114 +141,116 @@
     <SUITE FILE_PATH="coverage/ml_learn$sample_01.coverage" NAME="sample_01 Coverage Results" MODIFIED="1530448866705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01_Data_analysis_and_probability_theory" />
     <SUITE FILE_PATH="coverage/ml_learn$5_2_calc_e.coverage" NAME="5.2.calc_e Coverage Results" MODIFIED="1531038653100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_The_use_of_math_libraries" />
     <SUITE FILE_PATH="coverage/ml_learn$04_statistic.coverage" NAME="04_statistic Coverage Results" MODIFIED="1531035074385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_The_use_of_math_libraries" />
+    <SUITE FILE_PATH="coverage/ml_learn$6_3_svd.coverage" NAME="6.3.svd Coverage Results" MODIFIED="1531140764329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06_Use_of_machine_learning_libraries" />
     <SUITE FILE_PATH="coverage/ml_learn$02_Taylor_expansion.coverage" NAME="02_Taylor_expansion Coverage Results" MODIFIED="1530953968785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_The_use_of_math_libraries" />
     <SUITE FILE_PATH="coverage/ml_learn$sample_05.coverage" NAME="sample_05 Coverage Results" MODIFIED="1530452270717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01_Data_analysis_and_probability_theory" />
     <SUITE FILE_PATH="coverage/ml_learn$sample_04.coverage" NAME="sample_04 Coverage Results" MODIFIED="1530450568267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01_Data_analysis_and_probability_theory" />
+    <SUITE FILE_PATH="coverage/ml_learn$6_4_convolve.coverage" NAME="6.4.convolve Coverage Results" MODIFIED="1531142191669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06_Use_of_machine_learning_libraries" />
     <SUITE FILE_PATH="coverage/ml_learn$pdf2txt.coverage" NAME="pdf2txt Coverage Results" MODIFIED="1530539134440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02_Mathematical_statistics_and_parameter_estimation" />
+    <SUITE FILE_PATH="coverage/ml_learn$8_1_Advertising.coverage" NAME="8.1.Advertising Coverage Results" MODIFIED="1531148614099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/07_regression" />
     <SUITE FILE_PATH="coverage/ml_learn$Taylor_expansion.coverage" NAME="Taylor_expansion Coverage Results" MODIFIED="1530953352706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_The_use_of_math_libraries" />
     <SUITE FILE_PATH="coverage/ml_learn$03_class_and_inheritance.coverage" NAME="03_class_and_inheritance Coverage Results" MODIFIED="1531031399007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_The_use_of_math_libraries" />
     <SUITE FILE_PATH="coverage/xiaoxiang_ml$sample_01.coverage" NAME="sample_01 Coverage Results" MODIFIED="1530435327036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01_Data_analysis_and_probability_theory" />
     <SUITE FILE_PATH="coverage/ml_learn$sample_02.coverage" NAME="sample_02 Coverage Results" MODIFIED="1530449450429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01_Data_analysis_and_probability_theory" />
+    <SUITE FILE_PATH="coverage/ml_learn$6_1_Ensumble.coverage" NAME="6.1.Ensumble Coverage Results" MODIFIED="1531143113649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06_Use_of_machine_learning_libraries" />
     <SUITE FILE_PATH="coverage/ml_learn$5_1_intro.coverage" NAME="5.1.intro Coverage Results" MODIFIED="1531038613450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05_The_use_of_math_libraries" />
+    <SUITE FILE_PATH="coverage/ml_learn$6_2_fft.coverage" NAME="6.2.fft Coverage Results" MODIFIED="1531140151522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06_Use_of_machine_learning_libraries" />
+    <SUITE FILE_PATH="coverage/ml_learn$6_5_image_convolve.coverage" NAME="6.5.image_convolve Coverage Results" MODIFIED="1531142213818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06_Use_of_machine_learning_libraries" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="02_Taylor_expansion.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05_The_use_of_math_libraries/02_Taylor_expansion.py">
+      <file leaf-file-name="8.1.Advertising.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/07_regression/8.1.Advertising.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="416">
+              <caret line="61" column="22" lean-forward="false" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03_class_and_inheritance.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05_The_use_of_math_libraries/03_class_and_inheritance.py">
+      <file leaf-file-name="10.1.Iris_DecisionTree.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/08_Decision_trees_and_random_forests/10.1.Iris_DecisionTree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="04_statistic.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05_The_use_of_math_libraries/04_statistic.py">
+      <file leaf-file-name="12.1.xgBoost_Intro.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/10_XGBoost/12.1.xgBoost_Intro.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1750">
-              <caret line="76" column="84" lean-forward="false" selection-start-line="76" selection-start-column="56" selection-end-line="76" selection-end-column="97" />
-              <folding>
-                <element signature="e#25#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="5.2.calc_e.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05_The_use_of_math_libraries/5.2.calc_e.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="5.3.class_intro.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05_The_use_of_math_libraries/5.3.class_intro.py">
+      <file leaf-file-name="12.6.Bagging_intro.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/10_XGBoost/12.6.Bagging_intro.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="01_example.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05_The_use_of_math_libraries/01_example.py">
+      <file leaf-file-name="14.1.SVM.intro.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/11_SVM/14.1.SVM.intro.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="5.4.stat.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05_The_use_of_math_libraries/5.4.stat.py">
+      <file leaf-file-name="16.1.kMeans.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/12_cluster/16.1.kMeans.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1800">
-              <caret line="78" column="25" lean-forward="false" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="5.5MultiGuass.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05_The_use_of_math_libraries/5.5MultiGuass.py">
+      <file leaf-file-name="18.1.EM.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/13_EM_algorithm/18.1.EM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="5.1.intro.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05_The_use_of_math_libraries/5.1.intro.py">
+      <file leaf-file-name="20.1.Iris_GaussianNB.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/15_Naive_Bayes/20.1.Iris_GaussianNB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="360" column="55" lean-forward="false" selection-start-line="360" selection-start-column="55" selection-end-line="360" selection-end-column="55" />
-              <folding>
-                <element signature="e#83#101#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="6.1.Ensumble.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.1.Ensumble.py">
+      <file leaf-file-name="22.1.LDA_intro.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/16_LDA/22.1.LDA_intro.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="24.1.TrainHMM.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/17_HMM/24.1.TrainHMM.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -174,6 +292,12 @@
         <option value="$PROJECT_DIR$/05_The_use_of_math_libraries/04_statistic.py" />
         <option value="$PROJECT_DIR$/05_The_use_of_math_libraries/5.5MultiGuass.py" />
         <option value="$PROJECT_DIR$/05_The_use_of_math_libraries/5.1.intro.py" />
+        <option value="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.2.fft.py" />
+        <option value="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.1.Ensumble.py" />
+        <option value="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.3.svd.py" />
+        <option value="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.4.convolve.py" />
+        <option value="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.5.image_convolve.py" />
+        <option value="$PROJECT_DIR$/16_LDA/22.1.LDA_intro.py" />
       </list>
     </option>
   </component>
@@ -183,9 +307,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="478" />
-    <option name="y" value="139" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="679" />
+    <option name="y" value="105" />
     <option name="width" value="1381" />
     <option name="height" value="882" />
   </component>
@@ -207,7 +331,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -216,15 +339,11 @@
               <item name="ml_learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="ml_learn" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ml_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ml_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="06_Use_of_machine_learning_libraries" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -235,9 +354,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\code\xiao_xiang\ml_learn\06_Use_of_machine_learning_libraries" />
-      <recent name="G:\code\xiao_xiang\ml_learn\05_The_use_of_math_libraries" />
-      <recent name="G:\code\xiao_xiang\ml_learn\01_Data_analysis_and_probability_theory\Pic" />
+      <recent name="G:\code\xiao_xiang\ml_learn\17_HMM" />
+      <recent name="G:\code\xiao_xiang\ml_learn\17_HMM\doc" />
+      <recent name="G:\code\xiao_xiang\ml_learn\LDA" />
+      <recent name="G:\code\xiao_xiang\ml_learn\LDA\doc" />
+      <recent name="G:\code\xiao_xiang\ml_learn\15_Naive_Bayes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -252,116 +373,116 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.5.5MultiGuass">
-    <configuration name="03_class_and_inheritance" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.8.1.Advertising">
+    <configuration name="6.1.Ensumble" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05_The_use_of_math_libraries" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06_Use_of_machine_learning_libraries" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="xiaoxiang_ml" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_The_use_of_math_libraries/03_class_and_inheritance.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.1.Ensumble.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="04_statistic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="6.3.svd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05_The_use_of_math_libraries" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06_Use_of_machine_learning_libraries" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="xiaoxiang_ml" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_The_use_of_math_libraries/04_statistic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.3.svd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="5.1.intro" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="6.4.convolve" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05_The_use_of_math_libraries" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06_Use_of_machine_learning_libraries" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="xiaoxiang_ml" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_The_use_of_math_libraries/5.1.intro.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.4.convolve.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="5.2.calc_e" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="6.5.image_convolve" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05_The_use_of_math_libraries" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06_Use_of_machine_learning_libraries" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="xiaoxiang_ml" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_The_use_of_math_libraries/5.2.calc_e.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.5.image_convolve.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="5.5MultiGuass" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="8.1.Advertising" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05_The_use_of_math_libraries" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/07_regression" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="xiaoxiang_ml" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_The_use_of_math_libraries/5.5MultiGuass.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/07_regression/8.1.Advertising.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.03_class_and_inheritance" />
-      <item index="1" class="java.lang.String" itemvalue="Python.04_statistic" />
-      <item index="2" class="java.lang.String" itemvalue="Python.5.1.intro" />
-      <item index="3" class="java.lang.String" itemvalue="Python.5.2.calc_e" />
-      <item index="4" class="java.lang.String" itemvalue="Python.5.5MultiGuass" />
+      <item index="0" class="java.lang.String" itemvalue="Python.6.1.Ensumble" />
+      <item index="1" class="java.lang.String" itemvalue="Python.6.3.svd" />
+      <item index="2" class="java.lang.String" itemvalue="Python.6.4.convolve" />
+      <item index="3" class="java.lang.String" itemvalue="Python.6.5.image_convolve" />
+      <item index="4" class="java.lang.String" itemvalue="Python.8.1.Advertising" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.5.5MultiGuass" />
-        <item index="1" class="java.lang.String" itemvalue="Python.5.2.calc_e" />
-        <item index="2" class="java.lang.String" itemvalue="Python.5.1.intro" />
-        <item index="3" class="java.lang.String" itemvalue="Python.04_statistic" />
-        <item index="4" class="java.lang.String" itemvalue="Python.03_class_and_inheritance" />
+        <item index="0" class="java.lang.String" itemvalue="Python.8.1.Advertising" />
+        <item index="1" class="java.lang.String" itemvalue="Python.6.1.Ensumble" />
+        <item index="2" class="java.lang.String" itemvalue="Python.6.5.image_convolve" />
+        <item index="3" class="java.lang.String" itemvalue="Python.6.4.convolve" />
+        <item index="4" class="java.lang.String" itemvalue="Python.6.3.svd" />
       </list>
     </recent_temporary>
   </component>
@@ -391,28 +512,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="478" y="139" width="1381" height="882" extended-state="1" />
-    <editor active="true" />
+    <frame x="679" y="105" width="1381" height="882" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29798657" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3409396" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1990916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20514761" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3242655" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -423,195 +543,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_04.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_05.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_Mathematical_statistics_and_parameter_estimation/pdf2txt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05_The_use_of_math_libraries/01_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05_The_use_of_math_libraries/02_Taylor_expansion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05_The_use_of_math_libraries/03_class_and_inheritance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_04.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_05.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_Mathematical_statistics_and_parameter_estimation/pdf2txt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="42" column="56" lean-forward="false" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_04.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_05.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_Mathematical_statistics_and_parameter_estimation/pdf2txt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="42" column="56" lean-forward="false" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_04.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_Data_analysis_and_probability_theory/sample_05.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02_Mathematical_statistics_and_parameter_estimation/pdf2txt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
@@ -708,7 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26225">
           <caret line="1049" column="4" lean-forward="false" selection-start-line="1049" selection-start-column="4" selection-end-line="1049" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,7 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
           <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,7 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,7 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1800">
           <caret line="78" column="25" lean-forward="false" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,7 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -748,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -756,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -764,9 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1750">
           <caret line="76" column="84" lean-forward="false" selection-start-line="76" selection-start-column="56" selection-end-line="76" selection-end-column="97" />
-          <folding>
-            <element signature="e#25#62#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -774,21 +701,200 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/05_The_use_of_math_libraries/5.1.intro.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="8700">
           <caret line="360" column="55" lean-forward="false" selection-start-line="360" selection-start-column="55" selection-end-line="360" selection-end-column="55" />
           <folding>
-            <element signature="e#83#101#0" expanded="true" />
+            <element signature="e#83#101#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.lena.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/724268819/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="479" column="4" lean-forward="false" selection-start-line="479" selection-start-column="4" selection-end-line="479" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/Pic/svd_2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/Pic/svd_6.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/Pic/svd_9.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/Pic/svd_19.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/Pic/svd_29.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/Pic/svd_42.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/Pic/svd_50.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.SH600000.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="41" column="69" lean-forward="false" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/work_tools/env/anaconda2/Lib/site-packages/numpy/core/numeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23000">
+          <caret line="940" column="4" lean-forward="false" selection-start-line="940" selection-start-column="4" selection-end-line="940" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.son.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.1.Ensumble.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.2.fft.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1075">
+          <caret line="45" column="27" lean-forward="false" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.3.svd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="65" column="42" lean-forward="false" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.4.convolve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_Use_of_machine_learning_libraries/6.5.image_convolve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="47" column="67" lean-forward="false" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07_regression/8.1.Advertising.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="61" column="22" lean-forward="false" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08_Decision_trees_and_random_forests/10.1.Iris_DecisionTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10_XGBoost/12.1.xgBoost_Intro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10_XGBoost/12.6.Bagging_intro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11_SVM/14.1.SVM.intro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12_cluster/16.1.kMeans.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13_EM_algorithm/18.1.EM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15_Naive_Bayes/20.1.Iris_GaussianNB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/16_LDA/22.1.LDA_intro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17_HMM/24.1.TrainHMM.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />

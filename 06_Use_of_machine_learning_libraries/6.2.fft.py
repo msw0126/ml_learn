@@ -39,8 +39,11 @@ def non_zero(f):
 if __name__ == "__main__":
     mpl.rcParams['font.sans-serif'] = [u'simHei']
     mpl.rcParams['axes.unicode_minus'] = False
+    # 在控制台输出过程中，默认小数会以科学计数法的形式输出，若不需要，则可以用以下代码
     np.set_printoptions(suppress=True)
 
+    # np.pi是：3.14159265359
+    # 创建等差数列。随机16个元素。不包含最大值
     x = np.linspace(0, 2*np.pi, 16, endpoint=False)
     print '时域采样值：', x
     y = np.sin(2*x) + np.sin(3*x + np.pi/4)
@@ -49,8 +52,10 @@ if __name__ == "__main__":
     N = len(x)
     print '采样点个数：', N
     print '\n原始信号：', y
+    # #快速傅里叶变换
     f = np.fft.fft(y)
     print '\n频域信号：', f/N
+    # 计算数组各元素的绝对值
     a = np.abs(f/N)
     print '\n频率强度：', a
 
@@ -60,13 +65,16 @@ if __name__ == "__main__":
     print '\n实部：', np.real(iy)
     print '\n恢复信号与原始信号是否相同：', np.allclose(np.real(iy), y)
 
+    # 第一个画板的第一个子图
     plt.subplot(211)
     plt.plot(x, y, 'go-', lw=2)
     plt.title(u'时域信号', fontsize=15)
     plt.grid(True)
+    # 第二个画板的第二个子图
     plt.subplot(212)
     w = np.arange(N) * 2*np.pi / N
     print u'频率采样值：', w
+    # stem画出来是离散函数，杆图。 plot是连续函数
     plt.stem(w, a, linefmt='r-', markerfmt='ro')
     plt.title(u'频域信号', fontsize=15)
     plt.grid(True)
@@ -97,15 +105,19 @@ if __name__ == "__main__":
     print '恢复频域信号：', non_zero(f1)
 
     plt.figure(figsize=(8, 8), facecolor='w')
+    # subplot(x y z)%把屏幕分成x*y个窗口取第z个.
+    # 这里是分成三个窗口，取第一个
     plt.subplot(311)
     plt.plot(x, y, 'g-', lw=2)
     plt.title(u'三角波', fontsize=15)
     plt.grid(True)
+    # 取第二个
     plt.subplot(312)
     w = np.arange(N) * 2*np.pi / N
     plt.stem(w, a, linefmt='r-', markerfmt='ro')
     plt.title(u'频域信号', fontsize=15)
     plt.grid(True)
+    # 取第三个
     plt.subplot(313)
     plt.plot(x, y1, 'b-', lw=2, markersize=4)
     plt.title(u'三角波恢复信号', fontsize=15)

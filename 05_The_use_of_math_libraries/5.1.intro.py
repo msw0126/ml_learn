@@ -257,7 +257,7 @@ if __name__ == "__main__":
     # matplotlib.rcParams['font.sans-serif'] = [u'SimHei']  #FangSong/黑体 FangSong/KaiTi
     # matplotlib.rcParams['axes.unicode_minus'] = False
 
-    # 5.2 损失函数：Logistic损失(-1,1)/SVM Hinge损失/ 0/1损失
+    # 5.2 损失函数：Logistic损失(-1,1)/11_SVM Hinge损失/ 0/1损失
     # x = np.array(np.linspace(start=-2, stop=3, num=1001, dtype=np.float))
     # y_logit = np.log(1 + np.exp(-x)) / math.log(2)
     # y_boost = np.exp(-x)
