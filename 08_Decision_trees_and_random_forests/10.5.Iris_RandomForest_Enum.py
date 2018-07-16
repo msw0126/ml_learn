@@ -18,7 +18,7 @@ if __name__ == "__main__":
     mpl.rcParams['font.sans-serif'] = [u'SimHei']  # 黑体 FangSong/KaiTi
     mpl.rcParams['axes.unicode_minus'] = False
 
-    path = '..\\8.Regression\\8.iris.data'  # 数据文件路径
+    path = './8.iris.data'  # 数据文件路径
     data = np.loadtxt(path, dtype=float, delimiter=',', converters={4: iris_type})
     x_prime, y = np.split(data, (4,), axis=1)
 
@@ -62,7 +62,7 @@ if __name__ == "__main__":
         plt.xlim(x1_min, x1_max)
         plt.ylim(x2_min, x2_max)
         plt.grid()
-    plt.tight_layout(2.5)
-    plt.subplots_adjust(top=0.92)
+    plt.tight_layout(2.5)  # 图边宽
+    plt.subplots_adjust(top=0.92)  # 标题留的位置
     plt.suptitle(u'随机森林对鸢尾花数据的两特征组合的分类结果', fontsize=18)
     plt.show()

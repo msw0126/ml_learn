@@ -13,12 +13,12 @@ if __name__ == "__main__":
     y2 = np.cos(0.3*x) + np.random.randn(N) * 0.01
     # y1 = np.sin(x) + np.random.randn(N) * 0.05
     # y2 = np.cos(x) + np.random.randn(N) * 0.1
-    y = np.vstack((y1, y2))
+    y = np.vstack((y1, y2))  # 除了在纵向叠加矩阵外，还有将列表转换成矩阵的功能
     y = np.vstack((y1, y2)).T
     x = x.reshape(-1, 1)  # 转置后，得到N个样本，每个样本都是1维的
 
     deep = 3
-    reg = DecisionTreeRegressor(criterion='mse', max_depth=deep)
+    reg = DecisionTreeRegressor(criterion='mse', max_depth=deep)  # mse，均方误差
     dt = reg.fit(x, y)
 
     x_test = np.linspace(-4, 4, num=1000).reshape(-1, 1)

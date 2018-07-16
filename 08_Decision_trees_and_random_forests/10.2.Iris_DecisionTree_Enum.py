@@ -29,7 +29,7 @@ if __name__ == "__main__":
         x = x_prime[:, pair]
 
         # 决策树学习
-        clf = DecisionTreeClassifier(criterion='entropy', min_samples_leaf=3)
+        clf = DecisionTreeClassifier(criterion='entropy', min_samples_leaf=3)  # min_samples_leaf，最小的叶子节点的样本数目，如果少于这个数目，就不分了
         dt_clf = clf.fit(x, y)
 
         # 画图

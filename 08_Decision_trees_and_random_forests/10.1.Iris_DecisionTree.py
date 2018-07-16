@@ -24,7 +24,7 @@ if __name__ == "__main__":
     mpl.rcParams['font.sans-serif'] = [u'SimHei']
     mpl.rcParams['axes.unicode_minus'] = False
 
-    path = '..\\8.Regression\\8.iris.data'  # 数据文件路径
+    path = './8.iris.data'  # 数据文件路径
     data = np.loadtxt(path, dtype=float, delimiter=',', converters={4: iris_type})
     x, y = np.split(data, (4,), axis=1)
     # 为了可视化，仅使用前两列特征
@@ -37,16 +37,15 @@ if __name__ == "__main__":
     # min_samples_split = 10：如果该结点包含的样本数目大于10，则(有可能)对其分支
     # min_samples_leaf = 10：若将某结点分支后，得到的每个子结点样本数目都大于10，则完成分支；否则，不进行分支
     model = Pipeline([
-        ('ss', StandardScaler()),
-        ('DTC', DecisionTreeClassifier(criterion='entropy', max_depth=3))])
-    # clf = DecisionTreeClassifier(criterion='entropy', max_depth=3)
+        ('ss', StandardScaler()),  # 标准化。保证每一个特征它的均值都是0，方差都是1.可以一定程度体改分类效果
+        ('DTC', DecisionTreeClassifier(criterion='entropy', max_depth=3))])  # criterion='entropy',用熵的准则进行分割
     model = model.fit(x_train, y_train)
     y_test_hat = model.predict(x_test)      # 测试数据
 
     # 保存
     # dot -Tpng -o 1.png 1.dot
-    f = open('.\\iris_tree.dot', 'w')
-    tree.export_graphviz(model.get_params('DTC')['DTC'], out_file=f)
+    f = open('./iris_tree.dot', 'w')
+    tree.export_graphviz(model.get_params('DTC')['DTC'], out_file=f)  # 因为model是以管道的形式训练的，需要单独把模型读出来
 
     # 画图
     N, M = 100, 100  # 横纵各采样多少个值
@@ -68,7 +67,7 @@ if __name__ == "__main__":
     y_show_hat = model.predict(x_show)  # 预测值
     y_show_hat = y_show_hat.reshape(x1.shape)  # 使之与输入的形状相同
     plt.figure(facecolor='w')
-    plt.pcolormesh(x1, x2, y_show_hat, cmap=cm_light)  # 预测值的显示
+    plt.pcolormesh(x1, x2, y_show_hat, cmap=cm_light)  # 预测值的显示颜色
     plt.scatter(x_test[:, 0], x_test[:, 1], c=y_test.ravel(), edgecolors='k', s=100, cmap=cm_dark, marker='o')  # 测试数据
     plt.scatter(x[:, 0], x[:, 1], c=y.ravel(), edgecolors='k', s=40, cmap=cm_dark)  # 全部数据
     plt.xlabel(iris_feature[0], fontsize=15)
@@ -97,7 +96,7 @@ if __name__ == "__main__":
         result = (y_test_hat == y_test)  # True则预测正确，False则预测错误
         err = 1 - np.mean(result)
         err_list.append(err)
-        print d, ' 准确度: %.2f%%' % (100 * err)
+        print d, ' 错误率: %.2f%%' % (100 * err)
     plt.figure(facecolor='w')
     plt.plot(depth, err_list, 'ro-', lw=2)
     plt.xlabel(u'决策树深度', fontsize=15)

@@ -10,7 +10,7 @@ if __name__ == "__main__":
     N = 100
     x = np.random.rand(N) * 6 - 3     # [-3,3)
     x.sort()
-    y = np.sin(x) + np.random.randn(N) * 0.05
+    y = np.sin(x) + np.random.randn(N) * 0.05  # 加点噪声
     print y
     x = x.reshape(-1, 1)  # 转置后，得到N个样本，每个样本都是1维的
     print x
