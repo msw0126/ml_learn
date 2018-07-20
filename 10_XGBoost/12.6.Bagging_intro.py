@@ -26,9 +26,16 @@ if __name__ == "__main__":
     y = f(x) + 0.05*np.random.randn(N)
     x.shape = -1, 1
 
+    # 岭回归
     ridge = RidgeCV(alphas=np.logspace(-3, 2, 10), fit_intercept=False)
-    ridged = Pipeline([('poly', PolynomialFeatures(degree=10)), ('Ridge', ridge)])
+    # 它是使用多项式的方法来进行的，如果有a，b两个特征，那么它的2次多项式为（1,a,b,a^2,ab, b^2）。（参考：test01.py）
+    # 文档：https://blog.csdn.net/tiange_xiao/article/details/79755793
+    ridged = Pipeline(
+        [('poly', PolynomialFeatures(degree=10)),
+         ('Ridge', ridge)])
+    # Bagging回归器组合
     bagging_ridged = BaggingRegressor(ridged, n_estimators=100, max_samples=0.3)
+    # 决策树
     dtr = DecisionTreeRegressor(max_depth=5)
     regs = [
         ('DecisionTree Regressor', dtr),
@@ -45,6 +52,7 @@ if __name__ == "__main__":
     for i, (name, reg) in enumerate(regs):
         reg.fit(x, y)
         y_test = reg.predict(x_test.reshape(-1, 1))
+        # numpy.ravel(),将多维数组降位一维
         plt.plot(x_test, y_test.ravel(), color=clrs[i], lw=i+1, label=name, zorder=6-i)
     plt.legend(loc='upper left')
     plt.xlabel('X', fontsize=15)

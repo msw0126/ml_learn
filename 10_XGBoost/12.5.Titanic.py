@@ -22,20 +22,21 @@ def load_data(file_name, is_train):
     data = pd.read_csv(file_name)  # 数据文件路径
     # print data.describe()
 
-    # 性别
+    # 性别one-hot转换
     data['Sex'] = data['Sex'].map({'female': 0, 'male': 1}).astype(int)
-
     # 补齐船票价格缺失值
     if len(data.Fare[data.Fare.isnull()]) > 0:
-        fare = np.zeros(3)
+        fare = np.zeros(3)  # 得到三个全是0的列表
         for f in range(0, 3):
-            fare[f] = data[data.Pclass == f + 1]['Fare'].dropna().median()
+            fare[f] = data[data.Pclass == f + 1]['Fare'].dropna().median()  # 得到三种不同等级的票的价格的均值
         for f in range(0, 3):  # loop 0 to 2
-            data.loc[(data.Fare.isnull()) & (data.Pclass == f + 1), 'Fare'] = fare[f]
+            data.loc[(data.Fare.isnull()) & (data.Pclass == f + 1), 'Fare'] = fare[f]  # 满足等级相同和票价为空，就替换成相应等级票价的均值
+            print(fare[f])
 
-    # 年龄：使用均值代替缺失值
+    # 年龄：使用均值代替缺失值。(这种做法不合理)
     # mean_age = data['Age'].dropna().mean()
     # data.loc[(data.Age.isnull()), 'Age'] = mean_age
+    # 使用随机森林预测年龄
     if is_train:
         # 年龄：使用随机森林预测年龄缺失值
         print '随机森林预测缺失年龄：--start--'
@@ -49,7 +50,7 @@ def load_data(file_name, is_train):
         rfr.fit(x, y)
         age_hat = rfr.predict(age_null.values[:, 1:])
         # print age_hat
-        data.loc[(data.Age.isnull()), 'Age'] = age_hat
+        data.loc[(data.Age.isnull()), 'Age'] = age_hat  # 把预测到的年龄对应到缺失的年龄上
         print '随机森林预测缺失年龄：--over--'
     else:
         print '随机森林预测缺失年龄2：--start--'
@@ -70,13 +71,13 @@ def load_data(file_name, is_train):
     data.loc[(data.Embarked.isnull()), 'Embarked'] = 'S'  # 保留缺失出发城市
     # data['Embarked'] = data['Embarked'].map({'S': 0, 'C': 1, 'Q': 2, 'U': 0}).astype(int)
     # print data['Embarked']
-    embarked_data = pd.get_dummies(data.Embarked)
+    embarked_data = pd.get_dummies(data.Embarked)  # 对Embarked字段进行one-hot编码
     # print embarked_data
     # embarked_data = embarked_data.rename(columns={'S': 'Southampton', 'C': 'Cherbourg', 'Q': 'Queenstown', 'U': 'UnknownCity'})
-    embarked_data = embarked_data.rename(columns=lambda x: 'Embarked_' + str(x))
+    embarked_data = embarked_data.rename(columns=lambda x: 'Embarked_' + str(x))  # 的one-hot处理过以后的登陆地点，分别对每列进行改名
     data = pd.concat([data, embarked_data], axis=1)
-    print data.describe()
-    data.to_csv('New_Data.csv')
+    # print data.describe()
+    data.to_csv('New_Data.csv')  # 把处理过的数据保存为新文件
 
     x = data[['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked_C', 'Embarked_Q', 'Embarked_S']]
     # x = data[['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']]
@@ -88,7 +89,8 @@ def load_data(file_name, is_train):
     y = np.array(y)
 
     # 思考：这样做，其实发生了什么？
-    x = np.tile(x, (5, 1))
+    # 文档：https://blog.csdn.net/qq_18433441/article/details/54897250
+    x = np.tile(x, (5, 1))  # x周复制5倍，y轴复制一倍
     y = np.tile(y, (5, ))
     if is_train:
         return x, y

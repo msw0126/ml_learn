@@ -29,7 +29,7 @@ if __name__ == "__main__":
     # 设置参数
     param = {'max_depth': 2, 'eta': 1, 'silent': 1, 'objective': 'binary:logitraw'} # logitraw
     # param = {'max_depth': 3, 'eta': 0.3, 'silent': 1, 'objective': 'reg:logistic'}
-    # todo 为什么这么写，待查
+    # 在运行时可以看到关于测试数据的效果
     watchlist = [(data_test, 'eval'), (data_train, 'train')]
     n_round = 3
     # bst = xgb.train(param, data_train, num_boost_round=n_round, evals=watchlist)
@@ -46,6 +46,9 @@ if __name__ == "__main__":
     y = data_test.get_label()
     print y_hat
     print y
+    for x in y != (y_hat > 0):
+        if x:
+            print(x)
     # todo y和y_hat没有相同的
     error = sum(y != (y_hat > 0))
     error_rate = float(error) / len(y_hat)
