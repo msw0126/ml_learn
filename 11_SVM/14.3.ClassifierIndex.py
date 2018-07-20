@@ -10,21 +10,23 @@ from sklearn.metrics import precision_recall_fscore_support
 if __name__ == "__main__":
     y_true = np.array([1, 1, 1, 1, 0, 0])
     y_hat = np.array([1, 0, 1, 1, 1, 1])
-    print 'Accuracy：\t', accuracy_score(y_true, y_hat)
+    print 'Accuracy：\t', accuracy_score(y_true, y_hat)  # 分类准确率分数是指所有分类正确的百分比。
 
     # The precision is the ratio 'tp / (tp + fp)' where 'tp' is the number of
     # true positives and 'fp' the number of false positives. The precision is
     # intuitively the ability of the classifier not to label as positive a sample
     # that is negative.
     # The best value is 1 and the worst value is 0.
-    precision = precision_score(y_true, y_hat)
+    print "-----------------------------------"
+    precision = precision_score(y_true, y_hat)  # 正确率
     print 'Precision:\t', precision
 
     # The recall is the ratio 'tp / (tp + fn)' where 'tp' is the number of
     # true positives and 'fn' the number of false negatives. The recall is
     # intuitively the ability of the classifier to find all the positive samples.
     # The best value is 1 and the worst value is 0.
-    recall = recall_score(y_true, y_hat)
+    print "---------------------------------"
+    recall = recall_score(y_true, y_hat)  # 召回率
     print 'Recall:  \t', recall
 
     # F1 score, also known as balanced F-score or F-measure
@@ -33,7 +35,8 @@ if __name__ == "__main__":
     # The relative contribution of precision and recall to the F1 score are
     # equal. The formula for the F1 score is:
     #     F1 = 2 * (precision * recall) / (precision + recall)
-    print 'f1 score: \t', f1_score(y_true, y_hat)
+    print "---------------------------------"
+    print 'f1 score: \t', f1_score(y_true, y_hat)  # 平衡F分数
     #print 2 * (precision * recall) / (precision + recall)
 
     # The F-beta score is the weighted harmonic mean of precision and recall,

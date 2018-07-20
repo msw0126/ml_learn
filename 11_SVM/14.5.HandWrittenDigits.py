@@ -27,8 +27,8 @@ def save_image(im, i):
 if __name__ == "__main__":
     print 'Load Training File Start...'
     data = np.loadtxt('14.optdigits.tra', dtype=np.float, delimiter=',')
-    x, y = np.split(data, (-1, ), axis=1)
-    images = x.reshape(-1, 8, 8)
+    x, y = np.split(data, (-1, ), axis=1)  # 下标-1之前的是x
+    images = x.reshape(-1, 8, 8)  # -1是行，由numpy自行计算。三维列表中的元素也是8个元素
     y = y.ravel().astype(np.int)
 
     print 'Load Test Data Start...'
@@ -46,15 +46,15 @@ if __name__ == "__main__":
     matplotlib.rcParams['axes.unicode_minus'] = False
     plt.figure(figsize=(15, 9), facecolor='w')
     for index, image in enumerate(images[:16]):
-        plt.subplot(4, 8, index + 1)
-        plt.imshow(image, cmap=plt.cm.gray_r, interpolation='nearest')
+        plt.subplot(4, 8, index + 1)  # 要生成两行两列，这是第一个图plt.subplot('行','列','编号')
+        plt.imshow(image, cmap=plt.cm.gray_r, interpolation='nearest')  # 展示图片
         plt.title(u'训练图片: %i' % y[index])
     for index, image in enumerate(images_test[:16]):
         plt.subplot(4, 8, index + 17)
         plt.imshow(image, cmap=plt.cm.gray_r, interpolation='nearest')
         save_image(image.copy(), index)
         plt.title(u'测试图片: %i' % y_test[index])
-    plt.tight_layout()
+    plt.tight_layout()  # 调整子图之间的距离，防止堆叠
     plt.show()
 
     clf = svm.SVC(C=1, kernel='rbf', gamma=0.001)   # ~ kNN
@@ -68,9 +68,9 @@ if __name__ == "__main__":
     print y_test
     show_accuracy(y_test, y_hat, '测试集')
 
-    err_images = images_test[y_test != y_hat]
-    err_y_hat = y_hat[y_test != y_hat]
-    err_y = y_test[y_test != y_hat]
+    err_images = images_test[y_test != y_hat]  # 提取出预测错误的图片
+    err_y_hat = y_hat[y_test != y_hat]  # 提取出预测错误的数字
+    err_y = y_test[y_test != y_hat]  # 提取出预测错误的数字的真实值
     print err_y_hat
     print err_y
     plt.figure(figsize=(10, 8), facecolor='w')

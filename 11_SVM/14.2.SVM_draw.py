@@ -18,7 +18,6 @@ if __name__ == "__main__":
     x, y = np.split(data, (2, ), axis=1)
     y[y == 0] = -1
     y = y.ravel()
-
     # 分类器
     clfs = [svm.SVC(C=0.3, kernel='linear'),
            svm.SVC(C=10, kernel='linear'),
@@ -28,14 +27,16 @@ if __name__ == "__main__":
 
     x1_min, x1_max = x[:, 0].min(), x[:, 0].max()  # 第0列的范围
     x2_min, x2_max = x[:, 1].min(), x[:, 1].max()  # 第1列的范围
-    x1, x2 = np.mgrid[x1_min:x1_max:500j, x2_min:x2_max:500j]  # 生成网格采样点
+    # x1,第一个元素向右扩展。 x2，第一个元素向下扩展。500j,500列数据。文档：https://blog.csdn.net/u013534498/article/details/51399035
+    x1, x2 = np.mgrid[x1_min:x1_max:500j, x2_min:x2_max:500j]  # 生成网格采样点。参考：test_.py
+    # 分别把x1和x2合并成一个列表，然后合并。此处是按列合并，即x1作为第一列，x2作为第二列
     grid_test = np.stack((x1.flat, x2.flat), axis=1)  # 测试点
 
-    cm_light = matplotlib.colors.ListedColormap(['#77E0A0', '#FF8080'])
+    cm_light = matplotlib.colors.ListedColormap(['#77E0A0', '#FF8080'])  # 自定义颜色.color_map
     cm_dark = matplotlib.colors.ListedColormap(['g', 'r'])
-    matplotlib.rcParams['font.sans-serif'] = [u'SimHei']
-    matplotlib.rcParams['axes.unicode_minus'] = False
-    plt.figure(figsize=(10,8), facecolor='w')
+    matplotlib.rcParams['font.sans-serif'] = [u'SimHei']  # 自定义字体
+    matplotlib.rcParams['axes.unicode_minus'] = False  # 解决中文乱码
+    plt.figure(figsize=(10, 8), facecolor='w')  # 控制背景颜色和图片大小
     for i, clf in enumerate(clfs):
         clf.fit(x, y)
 
@@ -46,15 +47,15 @@ if __name__ == "__main__":
         print '支撑向量的数目：', clf.n_support_
         print '支撑向量的系数：', clf.dual_coef_
         print '支撑向量：', clf.support_
-        print
-        plt.subplot(2, 2, i+1)
+        plt.subplot(2, 2, i+1)  # 子图
         grid_hat = clf.predict(grid_test)       # 预测分类值
         grid_hat = grid_hat.reshape(x1.shape)  # 使之与输入的形状相同
-        plt.pcolormesh(x1, x2, grid_hat, cmap=cm_light, alpha=0.8)
+        plt.pcolormesh(x1, x2, grid_hat, cmap=cm_light, alpha=0.8)  # 输出为三个颜色区块，分布表示分类的三类区域
         plt.scatter(x[:, 0], x[:, 1], c=y, edgecolors='k', s=40, cmap=cm_dark)      # 样本的显示
         plt.scatter(x[clf.support_, 0], x[clf.support_, 1], edgecolors='k', facecolors='none', s=100, marker='o')   # 支撑向量
-        z = clf.decision_function(grid_test)
+        z = clf.decision_function(grid_test)  # #返回的是样本距离超平面的距离
         z = z.reshape(x1.shape)
+        # # 填充等高线的颜色
         plt.contour(x1, x2, z, colors=list('krk'), linestyles=['--', '-', '--'], linewidths=[1, 2, 1], levels=[-1, 0, 1])
         plt.xlim(x1_min, x1_max)
         plt.ylim(x2_min, x2_max)

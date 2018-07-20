@@ -1,6 +1,10 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
 
+"""
+SVR用做回归预测
+"""
+
 import numpy as np
 from sklearn import svm
 import matplotlib.pyplot as plt
@@ -9,11 +13,11 @@ import matplotlib.pyplot as plt
 if __name__ == "__main__":
     N = 50
     np.random.seed(0)
-    x = np.sort(np.random.uniform(0, 6, N), axis=0)
+    x = np.sort(np.random.uniform(0, 6, N), axis=0)  # 50个元素
     y = 2*np.sin(x) + 0.1*np.random.randn(N)
     x = x.reshape(-1, 1)
-    print 'x =\n', x
-    print 'y =\n', y
+    # print 'x =\n', x
+    # print 'y =\n', y
 
     print 'SVR - RBF'
     svr_rbf = svm.SVR(kernel='rbf', gamma=0.2, C=100)
