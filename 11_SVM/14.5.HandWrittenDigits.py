@@ -7,6 +7,7 @@ import matplotlib.colors
 import matplotlib.pyplot as plt
 from PIL import Image
 import os
+from sklearn.metrics import accuracy_score
 
 
 def show_accuracy(a, b, tip):
@@ -34,7 +35,7 @@ if __name__ == "__main__":
     print 'Load Test Data Start...'
     data = np.loadtxt('14.optdigits.tes', dtype=np.float, delimiter=',')
     x_test, y_test = np.split(data, (-1, ), axis=1)
-    images_test = x_test.reshape(-1, 8, 8)
+    images_test = x_test.reshape(-1, 8, 8)  # 对多少行不管，变成8乘8的矩阵
     y_test = y_test.ravel().astype(np.int)
     print 'Load Data OK...'
 
@@ -57,12 +58,14 @@ if __name__ == "__main__":
     plt.tight_layout()  # 调整子图之间的距离，防止堆叠
     plt.show()
 
-    clf = svm.SVC(C=1, kernel='rbf', gamma=0.001)   # ~ kNN
+    clf = svm.SVC(C=1, kernel='rbf', gamma=0.001)   # 这样的参数配置，类似KNN算法
     print 'Start Learning...'
     clf.fit(x, y)
     print 'Learning is OK...'
     y_hat = clf.predict(x)
-    show_accuracy(y, y_hat, '训练集')
+    show_accuracy(y, y_hat, '训练集')  # 自定义计算函数
+    print(accuracy_score(y, y_hat))  # 自带的包函数
+
     y_hat = clf.predict(x_test)
     print y_hat
     print y_test

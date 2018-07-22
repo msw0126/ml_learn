@@ -30,7 +30,7 @@ if __name__ == "__main__":
     x_c1 = 3*np.random.randn(c1, 2)  # 从标准正态分布中返回一个或多个样本值。 2列，990行
     x_c2 = 0.5*np.random.randn(c2, 2) + (4, 4)
     x = np.vstack((x_c1, x_c2))  ## 合并，依然是2列
-    y = np.ones(N)
+    y = np.ones(N)  # N个1的列表
     y[:c1] = -1
 
     # 显示大小
@@ -41,9 +41,9 @@ if __name__ == "__main__":
     clfs = [svm.SVC(C=1, kernel='linear'),
             # todo class_weight参数，不太明白
            svm.SVC(C=1, kernel='linear', class_weight={-1: 1, 1: 10}),  # 类别的权重，字典形式传递。设置第几类的参数C为weight*C(C-SVC中的C)
-           svm.SVC(C=0.8, kernel='rbf', gamma=0.5, class_weight={-1: 1, 1: 2}),
+           svm.SVC(C=0.8, kernel='rbf', gamma=0.5, class_weight={-1: 1, 1: 2}),  # 给一个小的权重就够了，只要比1大就够了
            svm.SVC(C=0.8, kernel='rbf', gamma=0.5, class_weight={-1: 1, 1: 10})]
-    titles = 'Linear', 'Linear, Weight=50', 'RBF, Weight=2', 'RBF, Weight=10'
+    titles = 'Linear', 'Linear, Weight=10', 'RBF, Weight=2', 'RBF, Weight=10'
 
     x1_min, x1_max = x[:, 0].min(), x[:, 0].max()  # 第0列的范围
     x2_min, x2_max = x[:, 1].min(), x[:, 1].max()  # 第1列的范围

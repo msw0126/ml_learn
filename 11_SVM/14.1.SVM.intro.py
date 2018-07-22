@@ -1,5 +1,8 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
+"""
+不像逻辑回归，SVM可以得到曲面的分类
+"""
 
 import numpy as np
 from sklearn import svm

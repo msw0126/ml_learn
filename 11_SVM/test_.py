@@ -11,7 +11,8 @@ import numpy as np
 # print grid_test
 
 
-a = np.random.randn(10, 2)
-b = np.random.randn(10, 2)
-c = np.vstack((a, b))
-print c
+# a = np.random.randn(10, 2)
+# b = np.random.randn(10, 2)
+# c = np.vstack((a, b))
+# print c
+print(np.ones(10))

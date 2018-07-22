@@ -48,6 +48,6 @@ if __name__ == "__main__":
     for beta in np.logspace(-3, 3, num=7, base=10):
         fbeta = fbeta_score(y_true, y_hat, beta=beta)
         print '\tbeta=%9.3f\tF-beta=%.5f' % (beta, fbeta)
-        #print (1+beta**2)*precision*recall / (beta**2 * precision + recall)
+        #print (1+beta**2)*precision*recall / (beta**2 * precision + recall)  # 自己计算
 
     print precision_recall_fscore_support(y_true, y_hat, beta=1)
