@@ -1,5 +1,9 @@
 # !/usr/bin/python
 # -*- coding:utf-8 -*-
+"""
+Mean-Shift算法
+文档：https://blog.csdn.net/jzwong/article/details/78830600
+"""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -17,9 +21,9 @@ if __name__ == "__main__":
     matplotlib.rcParams['font.sans-serif'] = [u'SimHei']
     matplotlib.rcParams['axes.unicode_minus'] = False
     plt.figure(figsize=(10, 9), facecolor='w')
-    m = euclidean_distances(data, squared=True)
-    bw = np.median(m)
-    print bw
+    m = euclidean_distances(data, squared=True)  # 欧氏距离
+    bw = np.median(m)  # 中位数
+
     for i, mul in enumerate(np.linspace(0.1, 0.4, 4)):
         band_width = mul * bw
         model = MeanShift(bin_seeding=True, bandwidth=band_width)
@@ -44,4 +48,4 @@ if __name__ == "__main__":
     plt.tight_layout(2)
     plt.suptitle(u'MeanShift聚类', fontsize=20)
     plt.subplots_adjust(top=0.92)
-    plt.show()
+    # plt.show()

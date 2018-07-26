@@ -1,5 +1,9 @@
 # !/usr/bin/python
 # -*- coding:utf-8 -*-
+"""
+GMM算法
+文档：https://blog.csdn.net/ACBattle/article/details/80427196
+"""
 
 import numpy as np
 from scipy.stats import multivariate_normal
@@ -20,6 +24,11 @@ if __name__ == '__main__':
     np.random.seed(0)
     mu1_fact = (0, 0, 0)
     cov_fact = np.identity(3)
+    # print cov_fact
+    # 根据实际情况生成一个多元正太分布矩阵
+    # mean：mean是多维分布的均值维度为1
+    # cov：协方差矩阵
+    # size：指定生成的正太分布矩阵的维度
     data1 = np.random.multivariate_normal(mu1_fact, cov_fact, 400)
     mu2_fact = (2, 2, 1)
     cov_fact = np.identity(3)
@@ -74,29 +83,29 @@ if __name__ == '__main__':
     tau1 = norm1.pdf(data)
     tau2 = norm2.pdf(data)
 
-    fig = plt.figure(figsize=(13, 7), facecolor='w')
-    ax = fig.add_subplot(121, projection='3d')
-    ax.scatter(data[:, 0], data[:, 1], data[:, 2], c='b', s=30, marker='o', depthshade=True)
-    ax.set_xlabel('X')
-    ax.set_ylabel('Y')
-    ax.set_zlabel('Z')
-    ax.set_title(u'原始数据', fontsize=18)
-    ax = fig.add_subplot(122, projection='3d')
-    order = pairwise_distances_argmin([mu1_fact, mu2_fact], [mu1, mu2], metric='euclidean')
-    if order[0] == 0:
-        c1 = tau1 > tau2
-    else:
-        c1 = tau1 < tau2
-    c2 = ~c1
-    acc = np.mean(y == c1)
-    print u'准确率：%.2f%%' % (100*acc)
-    ax.scatter(data[c1, 0], data[c1, 1], data[c1, 2], c='r', s=30, marker='o', depthshade=True)
-    ax.scatter(data[c2, 0], data[c2, 1], data[c2, 2], c='g', s=30, marker='^', depthshade=True)
-    ax.set_xlabel('X')
-    ax.set_ylabel('Y')
-    ax.set_zlabel('Z')
-    ax.set_title(u'EM算法分类', fontsize=18)
-    # plt.suptitle(u'EM算法的实现', fontsize=20)
-    # plt.subplots_adjust(top=0.92)
-    plt.tight_layout()
-    plt.show()
+    # fig = plt.figure(figsize=(13, 7), facecolor='w')
+    # ax = fig.add_subplot(121, projection='3d')
+    # ax.scatter(data[:, 0], data[:, 1], data[:, 2], c='b', s=30, marker='o', depthshade=True)
+    # ax.set_xlabel('X')
+    # ax.set_ylabel('Y')
+    # ax.set_zlabel('Z')
+    # ax.set_title(u'原始数据', fontsize=18)
+    # ax = fig.add_subplot(122, projection='3d')
+    # order = pairwise_distances_argmin([mu1_fact, mu2_fact], [mu1, mu2], metric='euclidean')
+    # if order[0] == 0:
+    #     c1 = tau1 > tau2
+    # else:
+    #     c1 = tau1 < tau2
+    # c2 = ~c1
+    # acc = np.mean(y == c1)
+    # print u'准确率：%.2f%%' % (100*acc)
+    # ax.scatter(data[c1, 0], data[c1, 1], data[c1, 2], c='r', s=30, marker='o', depthshade=True)
+    # ax.scatter(data[c2, 0], data[c2, 1], data[c2, 2], c='g', s=30, marker='^', depthshade=True)
+    # ax.set_xlabel('X')
+    # ax.set_ylabel('Y')
+    # ax.set_zlabel('Z')
+    # ax.set_title(u'EM算法分类', fontsize=18)
+    # # plt.suptitle(u'EM算法的实现', fontsize=20)
+    # # plt.subplots_adjust(top=0.92)
+    # plt.tight_layout()
+    # # plt.show()

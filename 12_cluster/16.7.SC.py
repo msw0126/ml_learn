@@ -1,5 +1,8 @@
 # !/usr/bin/python
 # -*- coding:utf-8 -*-
+"""
+spectral_clustering 谱聚类
+"""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -19,7 +22,7 @@ if __name__ == "__main__":
     matplotlib.rcParams['axes.unicode_minus'] = False
 
     t = np.arange(0, 2*np.pi, 0.1)
-    data1 = np.vstack((np.cos(t), np.sin(t))).T
+    data1 = np.vstack((np.cos(t), np.sin(t))).T  # 在竖直方向上堆叠. 文档：https://blog.csdn.net/m0_37393514/article/details/79538748
     data2 = np.vstack((2*np.cos(t), 2*np.sin(t))).T
     data3 = np.vstack((3*np.cos(t), 3*np.sin(t))).T
     data = np.vstack((data1, data2, data3))
@@ -49,4 +52,4 @@ if __name__ == "__main__":
         plt.title(ur'$\sigma$ = %.2f' % s, fontsize=16)
     plt.tight_layout()
     plt.subplots_adjust(top=0.9)
-    plt.show()
+    # plt.show()

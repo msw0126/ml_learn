@@ -22,11 +22,12 @@ def restore_image(cb, cluster, shape):
 
 def show_scatter(a):
     N = 10
-    print '原始数据：\n', a
+    # print '原始数据：\n', a
+    # todo 待查资料
     density, edges = np.histogramdd(a, bins=[N,N,N], range=[(0,1), (0,1), (0,1)])
     density /= density.max()
     x = y = z = np.arange(N)
-    d = np.meshgrid(x, y, z)
+    d = np.meshgrid(x, y, z)  # 变成三维矩阵
 
     fig = plt.figure(1, facecolor='w')
     ax = fig.add_subplot(111, projection='3d')
@@ -44,7 +45,7 @@ def show_scatter(a):
     plt.title(u'图像颜色频数分布', fontsize=18)
     plt.grid(True)
 
-    plt.show()
+    # plt.show()
 
 
 if __name__ == '__main__':
@@ -53,15 +54,16 @@ if __name__ == '__main__':
 
     num_vq = 50
     im = Image.open('16.lena.png')     # 16.son.bmp(100)/16.flower2.png(200)/16.son.png(60)/16.lena.png(50)
+    # todo 为什么除以255
     image = np.array(im).astype(np.float) / 255
-    image = image[:, :, :3]
-    image_v = image.reshape((-1, 3))
+    image = image[:, :, :3]  # 防止有错误数据，又重新读取一遍
+    image_v = image.reshape((-1, 3))  # 行自动，保持三个特征（3列）
     model = KMeans(num_vq)
     show_scatter(image_v)
 
     N = image_v.shape[0]    # 图像像素总数
     # 选择足够多的样本(如1000个)，计算聚类中心
-    idx = np.random.randint(0, N, size=1000)
+    idx = np.random.randint(0, N, size=1000)  # 随机选择100个样本的索引
     image_sample = image_v[idx]
     model.fit(image_sample)
     c = model.predict(image_v)  # 聚类结果
@@ -72,15 +74,15 @@ if __name__ == '__main__':
     plt.subplot(121)
     plt.axis('off')
     plt.title(u'原始图片', fontsize=18)
-    plt.imshow(image)
+    # plt.imshow(image)
     # plt.savefig('1.png')
 
     plt.subplot(122)
     vq_image = restore_image(model.cluster_centers_, c, image.shape)
     plt.axis('off')
     plt.title(u'矢量量化后图片：%d色' % num_vq, fontsize=18)
-    plt.imshow(vq_image)
+    # plt.imshow(vq_image)
     # plt.savefig('2.png')
 
-    plt.tight_layout(1.2)
-    plt.show()
+    # plt.tight_layout(1.2)
+    # # plt.show()

@@ -25,6 +25,7 @@ if __name__ == "__main__":
     n_clusters = 15
 
     affinity = image.img_to_graph(data)
+    print affinity
     beta = 3
     affinity.data = np.exp(-beta * affinity.data / affinity.data.std()) + 10e-5
     # a = affinity.toarray()
@@ -44,4 +45,4 @@ if __name__ == "__main__":
     plt.imshow(data, cmap=cm, interpolation='nearest')
     plt.title(u'谱聚类：%d簇' % n_clusters, fontsize=18)
     plt.tight_layout()
-    plt.show()
+    # plt.show()
