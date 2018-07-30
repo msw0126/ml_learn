@@ -83,29 +83,29 @@ if __name__ == '__main__':
     tau1 = norm1.pdf(data)
     tau2 = norm2.pdf(data)
 
-    # fig = plt.figure(figsize=(13, 7), facecolor='w')
-    # ax = fig.add_subplot(121, projection='3d')
-    # ax.scatter(data[:, 0], data[:, 1], data[:, 2], c='b', s=30, marker='o', depthshade=True)
-    # ax.set_xlabel('X')
-    # ax.set_ylabel('Y')
-    # ax.set_zlabel('Z')
-    # ax.set_title(u'原始数据', fontsize=18)
-    # ax = fig.add_subplot(122, projection='3d')
-    # order = pairwise_distances_argmin([mu1_fact, mu2_fact], [mu1, mu2], metric='euclidean')
-    # if order[0] == 0:
-    #     c1 = tau1 > tau2
-    # else:
-    #     c1 = tau1 < tau2
-    # c2 = ~c1
-    # acc = np.mean(y == c1)
-    # print u'准确率：%.2f%%' % (100*acc)
-    # ax.scatter(data[c1, 0], data[c1, 1], data[c1, 2], c='r', s=30, marker='o', depthshade=True)
-    # ax.scatter(data[c2, 0], data[c2, 1], data[c2, 2], c='g', s=30, marker='^', depthshade=True)
-    # ax.set_xlabel('X')
-    # ax.set_ylabel('Y')
-    # ax.set_zlabel('Z')
-    # ax.set_title(u'EM算法分类', fontsize=18)
-    # # plt.suptitle(u'EM算法的实现', fontsize=20)
-    # # plt.subplots_adjust(top=0.92)
-    # plt.tight_layout()
-    # # plt.show()
+    fig = plt.figure(figsize=(13, 7), facecolor='w')
+    ax = fig.add_subplot(121, projection='3d')
+    ax.scatter(data[:, 0], data[:, 1], data[:, 2], c='b', s=30, marker='o', depthshade=True)
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
+    ax.set_zlabel('Z')
+    ax.set_title(u'原始数据', fontsize=18)
+    ax = fig.add_subplot(122, projection='3d')
+    order = pairwise_distances_argmin([mu1_fact, mu2_fact], [mu1, mu2], metric='euclidean')
+    if order[0] == 0:
+        c1 = tau1 > tau2
+    else:
+        c1 = tau1 < tau2
+    c2 = ~c1
+    acc = np.mean(y == c1)
+    print u'准确率：%.2f%%' % (100*acc)
+    ax.scatter(data[c1, 0], data[c1, 1], data[c1, 2], c='r', s=30, marker='o', depthshade=True)
+    ax.scatter(data[c2, 0], data[c2, 1], data[c2, 2], c='g', s=30, marker='^', depthshade=True)
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
+    ax.set_zlabel('Z')
+    ax.set_title(u'EM算法分类', fontsize=18)
+    # plt.suptitle(u'EM算法的实现', fontsize=20)
+    # plt.subplots_adjust(top=0.92)
+    plt.tight_layout()
+    plt.show()

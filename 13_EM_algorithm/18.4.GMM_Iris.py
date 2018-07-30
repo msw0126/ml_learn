@@ -25,7 +25,7 @@ def iris_type(s):
 
 
 if __name__ == '__main__':
-    path = '..\\8.Regression\\8.iris.data'  # 数据文件路径
+    path = './8.iris.data'  # 数据文件路径
     data = np.loadtxt(path, dtype=float, delimiter=',', converters={4: iris_type})
     # 将数据的0到3列组成x，第4列得到y
     x_prime, y = np.split(data, (4,), axis=1)
@@ -36,7 +36,7 @@ if __name__ == '__main__':
     plt.figure(figsize=(10, 9), facecolor='#FFFFFF')
     for k, pair in enumerate(feature_pairs):
         x = x_prime[:, pair]
-        m = np.array([np.mean(x[y == i], axis=0) for i in range(3)])  # 均值的实际值
+        m = np.array([np.mean(x[y == i], axis=0) for i in range(3)])  # 均值的实际值(不同类别的x的均值)
         print '实际均值 = \n', m
 
         gmm = GaussianMixture(n_components=n_components, covariance_type='full', random_state=0)
@@ -49,43 +49,43 @@ if __name__ == '__main__':
 
         n_sample = y.size
         n_types = 3
-        change = np.empty((n_types, n_sample), dtype=np.bool)
+        change = np.empty((n_types, n_sample), dtype=np.bool)  # 依据给定形状和类型(shape[, dtype, order])返回一个新的空数组。
         for i in range(n_types):
             change[i] = y_hat == order[i]
         for i in range(n_types):
             y_hat[change[i]] = i
         acc = u'准确率：%.2f%%' % (100*np.mean(y_hat == y))
         print acc
-
-        cm_light = mpl.colors.ListedColormap(['#FF8080', '#77E0A0', '#A0A0FF'])
-        cm_dark = mpl.colors.ListedColormap(['r', 'g', '#6060FF'])
-        x1_min, x1_max = x[:, 0].min(), x[:, 0].max()
-        x2_min, x2_max = x[:, 1].min(), x[:, 1].max()
-        x1_min, x1_max = expand(x1_min, x1_max)
-        x2_min, x2_max = expand(x2_min, x2_max)
-        x1, x2 = np.mgrid[x1_min:x1_max:500j, x2_min:x2_max:500j]
-        grid_test = np.stack((x1.flat, x2.flat), axis=1)
-        grid_hat = gmm.predict(grid_test)
-
-        change = np.empty((n_types, grid_hat.size), dtype=np.bool)
-        for i in range(n_types):
-            change[i] = grid_hat == order[i]
-        for i in range(n_types):
-            grid_hat[change[i]] = i
-
-        grid_hat = grid_hat.reshape(x1.shape)
-        plt.subplot(3, 2, k+1)
-        plt.pcolormesh(x1, x2, grid_hat, cmap=cm_light)
-        plt.scatter(x[:, 0], x[:, 1], s=30, c=y, marker='o', cmap=cm_dark, edgecolors='k')
-        xx = 0.95 * x1_min + 0.05 * x1_max
-        yy = 0.1 * x2_min + 0.9 * x2_max
-        plt.text(xx, yy, acc, fontsize=14)
-        plt.xlim((x1_min, x1_max))
-        plt.ylim((x2_min, x2_max))
-        plt.xlabel(iris_feature[pair[0]], fontsize=14)
-        plt.ylabel(iris_feature[pair[1]], fontsize=14)
-        plt.grid()
-    plt.tight_layout(2)
-    plt.suptitle(u'EM算法无监督分类鸢尾花数据', fontsize=20)
-    plt.subplots_adjust(top=0.92)
-    plt.show()
+    #
+    #     cm_light = mpl.colors.ListedColormap(['#FF8080', '#77E0A0', '#A0A0FF'])
+    #     cm_dark = mpl.colors.ListedColormap(['r', 'g', '#6060FF'])
+    #     x1_min, x1_max = x[:, 0].min(), x[:, 0].max()
+    #     x2_min, x2_max = x[:, 1].min(), x[:, 1].max()
+    #     x1_min, x1_max = expand(x1_min, x1_max)
+    #     x2_min, x2_max = expand(x2_min, x2_max)
+    #     x1, x2 = np.mgrid[x1_min:x1_max:500j, x2_min:x2_max:500j]
+    #     grid_test = np.stack((x1.flat, x2.flat), axis=1)
+    #     grid_hat = gmm.predict(grid_test)
+    #
+    #     change = np.empty((n_types, grid_hat.size), dtype=np.bool)
+    #     for i in range(n_types):
+    #         change[i] = grid_hat == order[i]
+    #     for i in range(n_types):
+    #         grid_hat[change[i]] = i
+    #
+    #     grid_hat = grid_hat.reshape(x1.shape)
+    #     plt.subplot(3, 2, k+1)
+    #     plt.pcolormesh(x1, x2, grid_hat, cmap=cm_light)
+    #     plt.scatter(x[:, 0], x[:, 1], s=30, c=y, marker='o', cmap=cm_dark, edgecolors='k')
+    #     xx = 0.95 * x1_min + 0.05 * x1_max
+    #     yy = 0.1 * x2_min + 0.9 * x2_max
+    #     plt.text(xx, yy, acc, fontsize=14)
+    #     plt.xlim((x1_min, x1_max))
+    #     plt.ylim((x2_min, x2_max))
+    #     plt.xlabel(iris_feature[pair[0]], fontsize=14)
+    #     plt.ylabel(iris_feature[pair[1]], fontsize=14)
+    #     plt.grid()
+    # plt.tight_layout(2)
+    # plt.suptitle(u'EM算法无监督分类鸢尾花数据', fontsize=20)
+    # plt.subplots_adjust(top=0.92)
+    # plt.show()

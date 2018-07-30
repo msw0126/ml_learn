@@ -1,5 +1,8 @@
 # !/usr/bin/python
 # -*- coding:utf-8 -*-
+"""
+GMM-高斯混合模型
+"""
 
 import numpy as np
 from sklearn.mixture import GaussianMixture
@@ -24,7 +27,9 @@ if __name__ == '__main__':
     data = np.loadtxt('18.HeightWeight.csv', dtype=np.float, delimiter=',', skiprows=1)
     print data.shape
     y, x = np.split(data, [1, ], axis=1)
-    x, x_test, y, y_test = train_test_split(x, y, train_size=0.6, random_state=0)
+    x, x_test, y, y_test = train_test_split(x, y, test_size=0.4, random_state=0)
+    # n_components:混合高斯模型个数，默认为1
+    # covariance_type:协方差类型，包括{‘full’,‘tied’, ‘diag’, ‘spherical’}四种
     gmm = GaussianMixture(n_components=2, covariance_type='full', random_state=0)
     x_min = np.min(x, axis=0)
     x_max = np.max(x, axis=0)
@@ -64,8 +69,8 @@ if __name__ == '__main__':
         grid_hat[~z] = 0
     plt.figure(figsize=(9, 7), facecolor='w')
     plt.pcolormesh(x1, x2, grid_hat, cmap=cm_light)
-    plt.scatter(x[:, 0], x[:, 1], s=50, c=y, marker='o', cmap=cm_dark, edgecolors='k')
-    plt.scatter(x_test[:, 0], x_test[:, 1], s=60, c=y_test, marker='^', cmap=cm_dark, edgecolors='k')
+    plt.scatter(x[:, 0], x[:, 1], s=50, c=y.ravel(), marker='o', cmap=cm_dark, edgecolors='k')
+    plt.scatter(x_test[:, 0], x_test[:, 1], s=60, c=y_test.ravel(), marker='^', cmap=cm_dark, edgecolors='k')
 
     p = gmm.predict_proba(grid_test)
     p = p[:, 0].reshape(x1.shape)
