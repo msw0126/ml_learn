@@ -23,7 +23,7 @@ if __name__ == "__main__":
     volumn = x[:, 1]
     amount = x[:, 2]
     amplitude_price = x[:, 3] - x[:, 4]  # 每天的最高价与最低价的差
-    diff_price = np.diff(close_price)   # 涨跌值
+    diff_price = np.diff(close_price)   # 涨跌值(后一个元素减去前一个元素)
     volumn = volumn[1:]                 # 成交量
     amount = amount[1:]                 # 成交额
     amplitude_price = amplitude_price[1:]   # 每日振幅
@@ -48,18 +48,18 @@ if __name__ == "__main__":
     plt.grid(True)
     plt.title(u'交易量')
 
-    clrs = plt.cm.terrain(np.linspace(0, 0.8, n))
-    plt.subplot(423)
-    for i, clr in enumerate(clrs):
-        plt.plot(t, y[:, i], '-', color=clr, alpha=0.7)
-    plt.title(u'所有组分')
-    plt.grid(True)
-    for i, clr in enumerate(clrs):
-        axes = plt.subplot(4, 2, i+4)
-        plt.plot(t, y[:, i], '-', color=clr)
-        plt.title(u'组分%d' % (i+1))
-        plt.grid(True)
-    plt.suptitle(u'SH600000股票：GaussianHMM分解隐变量', fontsize=18)
-    plt.tight_layout()
-    plt.subplots_adjust(top=0.9)
-    # plt.show()
+    # clrs = plt.cm.terrain(np.linspace(0, 0.8, n))
+    # plt.subplot(423)
+    # for i, clr in enumerate(clrs):
+    #     plt.plot(t, y[:, i], '-', color=clr, alpha=0.7)
+    # plt.title(u'所有组分')
+    # plt.grid(True)
+    # for i, clr in enumerate(clrs):
+    #     axes = plt.subplot(4, 2, i+4)
+    #     plt.plot(t, y[:, i], '-', color=clr)
+    #     plt.title(u'组分%d' % (i+1))
+    #     plt.grid(True)
+    # plt.suptitle(u'SH600000股票：GaussianHMM分解隐变量', fontsize=18)
+    # plt.tight_layout()
+    # plt.subplots_adjust(top=0.9)
+    # # plt.show()
