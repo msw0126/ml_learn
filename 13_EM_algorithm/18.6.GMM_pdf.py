@@ -24,6 +24,7 @@ if __name__ == '__main__':
     N2 = 300
     N = N1 + N2
     x1 = np.random.multivariate_normal(mean=(3, 2), cov=cov1, size=N1)
+    # print x1
     m = np.array(((1, 1), (1, 3)))
     x1 = x1.dot(m)
     x2 = np.random.multivariate_normal(mean=(-1, 10), cov=cov1, size=N2)
@@ -37,6 +38,7 @@ if __name__ == '__main__':
     print 'GMM均值 = \n', centers
     print 'GMM方差 = \n', covs
     y_hat = gmm.predict(x)
+    # print y_hat
 
     colors = '#A0FFA0', '#FF8080',
     levels = 10
@@ -74,4 +76,4 @@ if __name__ == '__main__':
     mpl.rcParams['axes.unicode_minus'] = False
     plt.title(u'GMM似然函数值', fontsize=20)
     plt.grid(True)
-    plt.show()
+    # plt.show()

@@ -22,7 +22,7 @@ if __name__ == "__main__":
     close_price = x[:, 0]
     volumn = x[:, 1]
     amount = x[:, 2]
-    amplitude_price = x[:, 3] - x[:, 4] # 每天的最高价与最低价的差
+    amplitude_price = x[:, 3] - x[:, 4]  # 每天的最高价与最低价的差
     diff_price = np.diff(close_price)   # 涨跌值
     volumn = volumn[1:]                 # 成交量
     amount = amount[1:]                 # 成交额
@@ -62,4 +62,4 @@ if __name__ == "__main__":
     plt.suptitle(u'SH600000股票：GaussianHMM分解隐变量', fontsize=18)
     plt.tight_layout()
     plt.subplots_adjust(top=0.9)
-    plt.show()
+    # plt.show()

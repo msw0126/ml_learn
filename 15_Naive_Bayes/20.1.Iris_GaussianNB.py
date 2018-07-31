@@ -16,12 +16,12 @@ def iris_type(s):
 
 
 if __name__ == "__main__":
-    data = np.loadtxt('..\8.Regression\8.iris.data', dtype=float, delimiter=',', converters={4: iris_type})
-    print data
+    data = np.loadtxt('./8.iris.data', dtype=float, delimiter=',', converters={4: iris_type})
+    # print data
     x, y = np.split(data, (4,), axis=1)
     x = x[:, :2]
-    print x
-    print y
+    # print x
+    # print y
 
     gnb = Pipeline([
         ('sc', StandardScaler()),
@@ -59,7 +59,7 @@ if __name__ == "__main__":
     plt.ylim(x2_min, x2_max)
     plt.title(u'GaussianNB对鸢尾花数据的分类结果', fontsize=18)
     plt.grid(True)
-    plt.show()
+    # plt.show()
 
     # 训练集上的预测结果
     y_hat = gnb.predict(x)

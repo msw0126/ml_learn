@@ -48,10 +48,10 @@ if __name__ == '__main__':
                             alpha=0.01, eta=0.01, minimum_probability=0.001,
                             update_every = 1, chunksize = 100, passes = 1)
     print 'LDA模型完成，训练时间为\t%.3f秒' % (time.time() - t_start)
-    # # 所有文档的主题
-    # doc_topic = [a for a in lda[corpus_tfidf]]
-    # print 'Document-Topic:\n'
-    # pprint(doc_topic)
+    # 所有文档的主题
+    doc_topic = [a for a in lda[corpus_tfidf]]
+    print 'Document-Topic:\n'
+    pprint(doc_topic)
 
     # 随机打印某10个文档的主题
     num_show_topic = 10  # 每个文档显示前几个主题

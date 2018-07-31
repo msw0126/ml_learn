@@ -124,4 +124,4 @@ if __name__ == "__main__":
     plt.xlabel(u'分类器名称')
     plt.grid(True)
     plt.tight_layout(2)
-    plt.show()
+    # plt.show()

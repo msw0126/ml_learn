@@ -71,7 +71,7 @@ if __name__ == "__main__":
     plt.tight_layout()
     plt.suptitle(u'主题的词分布', fontsize=18)
     plt.subplots_adjust(top=0.9)
-    plt.show()
+    # plt.show()
 
     # Document - Topic
     plt.figure(figsize=(8, 9))
@@ -87,4 +87,4 @@ if __name__ == "__main__":
     plt.suptitle(u'文档的主题分布', fontsize=18)
     plt.tight_layout()
     plt.subplots_adjust(top=0.9)
-    plt.show()
+    # plt.show()
